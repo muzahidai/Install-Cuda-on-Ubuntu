@@ -80,7 +80,8 @@ Aallow read and write permission to cudafile.run
 chmod 777 cuda_10.0.130_410.48_linux.run
 ```
 Install   
-```sudo ./cuda_10.0.130_410.48_linux.run
+```
+sudo ./cuda_10.0.130_410.48_linux.run
 ``` 
  
 4.1.Follow the instructions, accpet and agree all yes, except do not install the driver (uncheck driver by pressing enter on it, because we already installed nvidia driver previously)
@@ -113,16 +114,16 @@ sudo dpkg -i libcudnn7-doc_7.6.5.32-1+cuda10.0_amd64.deb
 ```
 sudo vim ~/.bashrc
 ```
-        >>press i
-         >>export PATH=/usr/local/cuda-10.0/bin${PATH:+:${PATH}}  
-         >>export LD_LIBRARY_PATH=/usr/local/cuda-10.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
-	 >>press esc > : > wq >enter
+>>press i
+>>export PATH=/usr/local/cuda-10.0/bin${PATH:+:${PATH}}  
+>>export LD_LIBRARY_PATH=/usr/local/cuda-10.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+>>press esc > : > wq >enter
 ```
 source ~/.bashrc
 ```
-........CUDA setup has been Done...
+CUDA setup has been Finished...
 
-8.1 #Check cuda compiler: output: Cuda compilation tools, release 10.0, V10.0.130
+8.1 #Check cuda compiler: it will output: Cuda compilation tools, release 10.0, V10.0.130
 ```
 nvcc --version   
 ```

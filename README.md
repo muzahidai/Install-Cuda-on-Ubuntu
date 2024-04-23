@@ -143,10 +143,9 @@ cd /usr/local/cuda-10.0/cudnn_samples_v7/mnistCUDNN/
 ```
 ```
 make clean
-```
-```
 make
 ```
+
 Perform classification
 
 ```

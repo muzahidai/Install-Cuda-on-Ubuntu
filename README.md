@@ -37,11 +37,11 @@ if there is an output means nouvea is being used, need to block it
  ```
 sudo vim /etc/modprobe.d/blacklist.conf
 ```
+press "i" to edit and "Esc:wq" to save
 ```
->press i  // edit
-      blacklist nouveau
-       options nouvea modeset=0
-   >Esc:wq     // save and quit
+ blacklist nouveau
+options nouvea modeset=0
+
 ```
 
 ```
@@ -77,7 +77,7 @@ sudo apt-get install libfreeimage3 libfreeimage-dev
 4. Install CUDA_toolkit_10.0  // Download the exact cuda version that you want to install, we are doing cuda 10.0
 Aallow read and write permission to cudafile.run
 ```
-chmod 777 cuda_10.0.130_410.48_linux.run
+sudo chmod 777 cuda_10.0.130_410.48_linux.run
 ```
 Install   
 ```

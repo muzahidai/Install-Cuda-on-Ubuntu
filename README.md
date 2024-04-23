@@ -1,7 +1,7 @@
 # Install-Cuda-on-Ubuntu
 Install CUDA and cudnn for Machine learning.
 
- Install CUDA on Ubuntu Dell G7 RTX 2070
+Install CUDA on Ubuntu Dell G7 RTX 2070
 
 1. Install driver on software update (Driver Version: 470.182.03 checked for cuda10.0)
  Check which drivers are available for this device.
@@ -23,7 +23,8 @@ or, Install driver GUI ..> setup-> additional drivers
 Then check if the driver is installed correctly. It will open a window to show drivers and GPU memories
 
 
-``` nvidia-smi  
+```
+nvidia-smi
 ```
   
 1.1 Choose NVIDIA for graphics-display and block nouvea
@@ -71,12 +72,16 @@ If FreeImage is not set up correctly during testing cuda
 sudo apt-get install libfreeimage3 libfreeimage-dev    
 ```
 
-3. Download CUDA: [[link]https://(developer.nvidia.com/cuda-10.0-download-archive?target_os=Linux&target_arch=x86_64&target_distro=Ubuntu&target_version=1804&target_type=runfilelocal)]
+3. Download CUDA: [[link] (https://developer.nvidia.com/cuda-10.0-download-archive?target_os=Linux&target_arch=x86_64&target_distro=Ubuntu&target_version=1804&target_type=runfilelocal)]
 
 4. Install CUDA_toolkit_10.0  // Download the exact cuda version that you want to install, we are doing cuda 10.0
-
-chmod 777 cuda_10.0.130_410.48_linux.run    // allow read and write permission
->>sudo ./cuda_10.0.130_410.48_linux.run       // install
+Aallow read and write permission to cudafile.run
+```
+chmod 777 cuda_10.0.130_410.48_linux.run
+```
+Install   
+```sudo ./cuda_10.0.130_410.48_linux.run
+``` 
  
 4.1.Follow the instructions, accpet and agree all yes, except do not install the driver (uncheck driver by pressing enter on it, because we already installed nvidia driver previously)
 

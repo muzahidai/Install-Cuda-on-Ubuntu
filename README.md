@@ -83,8 +83,30 @@ Install
 ```
 sudo ./cuda_10.0.130_410.48_linux.run
 ``` 
+
  
 4.1.Follow the instructions, accpet and agree all yes, except do not install the driver (uncheck driver by pressing enter on it, because we already installed nvidia driver previously)
+
+4.2. Export path: change the directory name of "/cuda-xx.x/bins$" according to yours. You can go to the directory manually to see the exact name.
+
+```
+sudo vim ~/.bashrc
+```
+>>press i
+>>export PATH=/usr/local/cuda-10.0/bin${PATH:+:${PATH}}  
+>>export LD_LIBRARY_PATH=/usr/local/cuda-10.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+>>press esc > : > wq >enter
+```
+source ~/.bashrc
+
+4.3 #Check cuda compiler: it will output: Cuda compilation tools, release 10.0, V10.0.130
+```
+nvcc --version   
+```
+or
+```
+nvcc -V
+```
 
 5. Now download the CUDNN library | Register and account then u get full access. We are downloading cudnnv7.6.5. you can download based on your demand
 
@@ -97,7 +119,7 @@ sudo ./cuda_10.0.130_410.48_linux.run
 	         		ii. cuDNN Developer Library for Ubuntu20.04 x86_64 (Deb)
 	         		iii. cuDNN Code Samples and User Guide for Ubuntu20.04 x86_64 (Deb)
 
-7.1 Install these three files, and change the file name according to yours
+7. Install these three files, and change the file name according to yours
 
 ```
 sudo dpkg -i libcudnn7_7.6.5.32-1+cuda10.0_amd64.deb
@@ -109,25 +131,9 @@ sudo dpkg -i libcudnn7-dev_7.6.5.32-1+cuda10.0_amd64.deb
 sudo dpkg -i libcudnn7-doc_7.6.5.32-1+cuda10.0_amd64.deb
 ```
 
-8. Export path: change the directory name of "/cuda-xx.x/bins$" according to yours. You can go to the directory manually to see the exact name.
-
-```
-sudo vim ~/.bashrc
-```
->>press i
->>export PATH=/usr/local/cuda-10.0/bin${PATH:+:${PATH}}  
->>export LD_LIBRARY_PATH=/usr/local/cuda-10.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
->>press esc > : > wq >enter
-```
-source ~/.bashrc
-```
 CUDA setup has been Finished...
 
-8.1 #Check cuda compiler: it will output: Cuda compilation tools, release 10.0, V10.0.130
-```
-nvcc --version   
-```
-9.Now do check if cuda is working- run a digit classification test
+8.Now do check if cuda is working- run a digit classification test
 
 
 Copy cuda samples directories (cudnn_samples_v7) and paste to /usr/local/cuda-10.x.x  
@@ -146,7 +152,7 @@ make clean
 make
 ```
 
-Perform classification
+8.1 Perform classification
 
 ```
 ./mnistCUDNN    

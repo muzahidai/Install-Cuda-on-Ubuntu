@@ -4,9 +4,16 @@ Install CUDA and cudnn for Machine learning.
  Install CUDA on Ubuntu Dell G7 RTX 2070
 
 1. Install driver on software update (Driver Version: 470.182.03 checked for cuda10.0)
- Check which drivers are available for this device
->> ubuntu-drivers devices       // u can see list available drivers
->>sudo apt install nvidia-34*
+ Check which drivers are available for this device.
+
+You can see list available drivers
+```
+ubuntu-drivers devices
+```
+
+```
+sudo apt install nvidia-34*
+```
  or
 ```
 sudo ubuntu-drivers autoinstall

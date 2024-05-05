@@ -1,0 +1,67 @@
+How to install tensorflow-gpu1.13.31 on
+
+Dell G7 || RTX2070
+
+1. First install. ubuntu18.04.06
+2. Install gcc> sudo install gcc make
+3. sudo apt install build-essential
+4. Install Nvidia driver (install from sofwtware update): 470.182
+		Check: nvidia-smi
+check avialble driver: ubuntu-drivers 
+5. Install Anaconda: Anaconda3-2023.03-1-Linux-x86_64.sh
+6. Install python 3.7
+	>>sudo apt update 
+	>>sudo apt install software-properties-common
+	>>sudo add-apt-repository ppa:deadsnakes/ppa
+	>>sudo apt install python3.7
+	check
+	>>python3.7 --version
+
+7.conda create -n dl python=3.7
+8.conda activate dl
+9.conda install tensorflow-gpu=1.13.1
+
+.............Done....................
+10. Check if tensorflow detect the gpu device or not
+>>python
+	>>from tensorflow.python.client import device_lib
+	>>print(device_lib.list_local_devices())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
++
+
+

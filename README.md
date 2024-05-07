@@ -98,7 +98,7 @@ sudo vim ~/.bashrc
 >>press esc > : > wq >enter
 ```
 source ~/.bashrc
-
+```
 4.3 #Check cuda compiler: it will output: Cuda compilation tools, release 10.0, V10.0.130
 ```
 nvcc --version   

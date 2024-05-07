@@ -64,9 +64,14 @@ sudo apt-get install libfreeimage3 libfreeimage-dev
 3. Download CUDA: [[link]https://(developer.nvidia.com/cuda-10.0-download-archive?target_os=Linux&target_arch=x86_64&target_distro=Ubuntu&target_version=1804&target_type=runfilelocal)]
 
 4. Install CUDA_toolkit_10.0  // Download the exact cuda version that you want to install, we are doing cuda 10.0
-
-chmod 777 cuda_10.0.130_410.48_linux.run    // allow read and write permission
->>sudo ./cuda_10.0.130_410.48_linux.run       // install
+// allow read and write permission
+```
+sudo chmod 777 cuda_10.0.130_410.48_linux.run
+```
+// install now
+```
+sudo ./cuda_10.0.130_410.48_linux.run
+```     
  
 4.1.Follow the instructions, accpet and agree all yes, except do not install the driver (uncheck driver by pressing enter on it, because we already installed nvidia driver previously)
 
@@ -98,10 +103,12 @@ sudo dpkg -i libcudnn7-doc_7.6.5.32-1+cuda10.0_amd64.deb
 ```
 sudo vim ~/.bashrc
 ```
-        >>press i
-         >>export PATH=/usr/local/cuda-10.0/bin${PATH:+:${PATH}}  
-         >>export LD_LIBRARY_PATH=/usr/local/cuda-10.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
-	 >>press esc > : > wq >enter
+ >>press i to edit the file and write following lines inside at the end of the file
+```
+export PATH=/usr/local/cuda-10.0/bin${PATH:+:${PATH}}  
+export LD_LIBRARY_PATH=/usr/local/cuda-10.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+```
+press esc > : > wq >enter
 ```
 source ~/.bashrc
 ```
@@ -126,10 +133,10 @@ sudo cp -r /usr/src/cudnn_samples_v7/ /usr/local/cuda-10.0/
 cd /usr/local/cuda-10.0/cudnn_samples_v7/mnistCUDNN/
 ```
 ```
-make clean
+sudo make clean
 ```
 ```
-make
+sudo make
 ```
 Perform classification
 

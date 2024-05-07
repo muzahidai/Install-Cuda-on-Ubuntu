@@ -27,9 +27,11 @@ if there is an output means nouvea is being used, need to block it
 sudo vim /etc/modprobe.d/blacklist.conf
 ```
   >press i  // edit
-      blacklist nouveau
-       options nouvea modeset=0
-   >Esc:wq     // save and quit
+```
+blacklist nouveau
+options nouvea modeset=0
+```
+Press Esc:wq     // save and quit
 
 ```
 sudo update initramfs -U

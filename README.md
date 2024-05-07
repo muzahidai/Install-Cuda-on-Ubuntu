@@ -92,9 +92,11 @@ sudo ./cuda_10.0.130_410.48_linux.run
 ```
 sudo vim ~/.bashrc
 ```
->>press i
->>export PATH=/usr/local/cuda-10.0/bin${PATH:+:${PATH}}  
->>export LD_LIBRARY_PATH=/usr/local/cuda-10.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+>>press i to edit the file and addd the following lines inside the file at the bottom
+```
+export PATH=/usr/local/cuda-10.0/bin${PATH:+:${PATH}}  
+export LD_LIBRARY_PATH=/usr/local/cuda-10.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+```
 >>press esc > : > wq >enter
 ```
 source ~/.bashrc

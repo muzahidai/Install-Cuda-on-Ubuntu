@@ -92,7 +92,7 @@ sudo ./cuda_10.0.130_410.48_linux.run
 ```
 sudo vim ~/.bashrc
 ```
->>press i to edit the file and addd the following lines inside the file at the bottom
+>>press i to edit the file and addd the following lines inside the file at the bottom. Change cuda directory according to you, "/usr/local/cuda-1x.x/bin'. To make sure, you can manually go this directory and see the directory name to be confirmed.
 ```
 export PATH=/usr/local/cuda-10.0/bin${PATH:+:${PATH}}  
 export LD_LIBRARY_PATH=/usr/local/cuda-10.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}

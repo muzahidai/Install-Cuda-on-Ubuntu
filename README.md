@@ -131,7 +131,7 @@ sudo dpkg -i cudnn-local-repo-ubuntu1804-8.9.7.29_1.0-1_amd64.deb
 
 CUDA setup has been Finished...
 
-8.Now do check if cuda is working or not-> run a digit classification test. Download cudav8 samples from github.
+8.Now do check if cuda is working or not-> run a digit classification test. Download cudav8 samples from [[github.](https://github.com/muzahidai/Install-Cuda-on-Ubuntu/blob/main/cudnn_samples_v8-master.zip)]
 
 
 Copy cuda samples directories (cudnn_samples_v8) and paste to /usr/local/cuda-11.8

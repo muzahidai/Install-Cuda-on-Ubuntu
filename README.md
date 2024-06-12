@@ -1,7 +1,7 @@
 # Install-Cuda-on-Ubuntu
-Install CUDA and cudnn for Machine learning.
+Install CUDA and cudnn for Machine learning or Deep Learning.
 
-Install CUDA on Ubuntu Dell G7 RTX 2070
+Tested on Ubuntu 18.04, Dell G7 RTX 2070
 
 1. Install driver on software update (Driver Version: 510)
  Check which drivers are available for this device.
@@ -159,7 +159,7 @@ make
 	Result of classification: 1 3 5
 
 	Test passed!
-
+ It is Done.
  8.2 If cudnn.h file not found during make or performing classification test
 ```
 sudo apt-get install libcudnn8-dev  
@@ -169,8 +169,7 @@ If FreeImage is not set up correctly during performing classification test
 sudo apt-get install libfreeimage3 libfreeimage-dev    
 ```
 Now perform classification again, repeat 8.1
-***************************************************************************
-It's Done
+
 
 **************************************************************************
 How to remove cudatoolkit and install other version

@@ -65,7 +65,7 @@ sudo apt-get install freeglut3-dev build-essential libx11-dev libxmu-dev libxi-d
 ```
 
 
-3. Download CUDA for Linux-x86_64> Ubuntu> seelct your ununtu version>Run Local file: [[link] (https://developer.nvidia.com/cuda-11-6-0-download-archive?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=18.04&target_type=runfile_local)]
+3. Download CUDA for Linux-x86_64> Ubuntu> seelct your ununtu version>Run Local file: [[link](https://developer.nvidia.com/cuda-11-6-0-download-archive?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=18.04&target_type=runfile_local)]
 
    Check ubuntu Version on your computer
    ```
@@ -114,7 +114,7 @@ If it is installed correctly it will Output: Cuda compilation tools, release 11.
 
 5. Now download the CUDNN library | Register and account then u get full access. We are downloading Download cuDNN v8.9.7 (December 5th, 2023), for CUDA 11.x. you can download based on your demand
 
-6. Select ubuntu version and debian file on [[Link]( https://developer.nvidia.com/rdp/cudnn-archive)]
+6. Select ubuntu version and debian file on [[Link](https://developer.nvidia.com/rdp/cudnn-archive)]
                                                  
 
 			Download Manually by clicking:
@@ -131,7 +131,7 @@ sudo dpkg -i cudnn-local-repo-ubuntu1804-8.9.7.29_1.0-1_amd64.deb
 
 CUDA setup has been Finished...
 
-8.Now do check if cuda is working or not-> run a digit classification test. Download cudav8 samples from [[github.](https://github.com/muzahidai/Install-Cuda-on-Ubuntu/blob/main/cudnn_samples_v8-master.zip)]
+8.Now do check if cuda is working or not-> run a digit classification test. Download cudnnv8 samples from [[github.](https://github.com/muzahidai/Install-Cuda-on-Ubuntu/blob/main/cudnn_samples_v8-master.zip)]
 
 
 Copy cuda samples directories (cudnn_samples_v8) and paste to /usr/local/cuda-11.8

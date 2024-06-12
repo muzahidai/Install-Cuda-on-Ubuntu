@@ -193,5 +193,26 @@ If you install new version of cuda, follow instruction from step 3 to 8.2
 **************************************************************************
 Install anaconda and tensorflow-gpu
 **************************************************************************
-10. First Install Anaconda 2023.03 version then install tensorflow GPU
-
+10. First Install Anaconda3-2023.03-1-Linux-x86_64.sh version then install tensorflow GPU [[link](https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/)]
+```
+./Anaconda3-2023.03-1-Linux-x86_64.sh
+```
+Create an environment for your project
+```
+conda create -n dl python=3.8
+```
+```
+conda activate dl
+```
+```
+conda install tensorflow-gpu=1.13.1
+```
+Now Check if Tensorflow Gpu is working or not
+```
+python
+```
+```
+from tensorflow.python.client import device_lib
+print(device_lib.list_local_devices())
+```
+It will show GPU device

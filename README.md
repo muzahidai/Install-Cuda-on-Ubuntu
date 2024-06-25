@@ -59,7 +59,6 @@ lsmod | grep nouvea
 2. Install Dependencies & pre-requisites
 
 ```
-sudo apt install build-essential
 sudo apt install gcc tar make git
 sudo apt-get install freeglut3-dev build-essential libx11-dev libxmu-dev libxi-dev libgl1-mesa-glx libglu1-mesa libglu1-mesa-dev
 ```
@@ -146,8 +145,8 @@ Change the current directory to sudnn samples directory
 cd /usr/local/cuda-11.8/cudnn_samples_v7/mnistCUDNN/
 ```
 ```
-make clean
-make
+sudo make clean
+sudo make
 ```
 
 8.1 Perform classification

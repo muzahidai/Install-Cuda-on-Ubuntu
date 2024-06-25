@@ -236,5 +236,5 @@ import torch
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}")
 ```
-It will output GPU list if it installed correctly
+Output: Using device: cuda
 

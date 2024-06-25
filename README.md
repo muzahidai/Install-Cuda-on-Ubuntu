@@ -163,6 +163,15 @@ sudo make
 ```
 sudo apt-get install libcudnn8-dev  
 ```
+If unable to locate package libcudnn8 then try following instruction
+
+```
+sudo apt update && rm -rf /var/lib/apt/lists**
+sudo add-apt-repository multiverse
+sudo apt update
+sudo apt-get install libcudnn8-dev 
+```
+
 If FreeImage is not set up correctly during performing classification test
 ```
 sudo apt-get install libfreeimage3 libfreeimage-dev    

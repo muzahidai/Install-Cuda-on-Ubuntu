@@ -198,7 +198,7 @@ reboot
 If you install new version of cuda, follow instruction from step 3 to 8.2
 
 **************************************************************************
-Install anaconda and tensorflow-gpu
+Install anaconda, tensorflow-gpu and Pytorch
 **************************************************************************
 10. First Install Anaconda3-2023.03-1-Linux-x86_64.sh version then install tensorflow GPU [[link](https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/)]
 ```
@@ -223,3 +223,18 @@ from tensorflow.python.client import device_lib
 print(device_lib.list_local_devices())
 ```
 It will show GPU device
+
+10.1 Install pytorch install pytorch-[[see commands](https://pytorch.org/get-started/previous-versions/)]
+ For cuda 11.8
+ ```
+conda install pytorch==2.2.2 torchvision==0.17.2 torchaudio==2.2.2 pytorch-cuda=11.8 -c pytorch -c nvidia
+```
+To check if it works
+
+```
+import torch
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+print(f"Using device: {device}")
+```
+It will output GPU list if it installed correctly
+
